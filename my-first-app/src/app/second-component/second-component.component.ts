@@ -7,7 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SecondComponentComponent implements OnInit {
 
-  constructor() { }
+  allowedAction: boolean = false;
+
+  constructor() {
+    // Après 4 secondes, on change la valeur de la propriété
+    // Et donc le COMPORTEMENT du bouton derrière, ce dernier 
+    // comportant une property-binding sur cet attribut, pour disabled
+    setTimeout(() => { this.allowedAction = true },4000)
+  }
 
   ngOnInit(): void {
   }

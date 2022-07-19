@@ -1,1 +1,6 @@
 <button class="btn btn-info" [disabled]="!allowedAction">Add new element</button>
+<br/>
+<br/>
+<button class="btn btn-warning" [disabled]="isLogged" (click)="onClickLoginButton()">Login</button>
+
+<h4> {{ returnLoggedStatus() }} </h4>

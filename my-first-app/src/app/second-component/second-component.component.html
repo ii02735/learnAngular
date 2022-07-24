@@ -2,5 +2,10 @@
 <br/>
 <br/>
 <button class="btn btn-warning" [disabled]="isLogged" (click)="onClickLoginButton()">Login</button>
+<div *ngIf="isLogged">
+    <br/>
+    <button class="btn btn-danger" (click)="logoutButton()">Logout</button>
+</div>
 
-<h4> {{ returnLoggedStatus() }} </h4>
+
+<h4 [ngStyle]="{color}"> {{ returnLoggedStatus() }} </h4>

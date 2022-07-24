@@ -1,3 +1,9 @@
 <input type="text" (input)="updateTextValue($event)"/>
 
 {{ getTextValue() }}
+
+<br/>
+
+<h4>Usage of two-way binding</h4>
+
+<input type="text" [(ngModel)]="textValue"/>

@@ -1,0 +1,11 @@
+#mainDiv {
+    padding: 15px;
+}
+
+#mainDiv button {
+    margin-bottom: 10px;
+}
+
+.whiteText {
+    color: white;
+}

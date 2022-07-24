@@ -1,0 +1,11 @@
+ <div id="mainDiv">
+    <button class="btn btn-info" (click)="switchDisplay()">Display paragraph</button>
+    <br/>
+    <div *ngIf="showParagraph">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores velit minus voluptate facilis obcaecati necessitatibus itaque culpa, libero nam quia provident eos, totam eveniet consectetur accusamus, aut neque perspiciatis adipisci!</p>
+    </div>
+    <br/>
+    <ul *ngFor="let clickElement of arrayLogClicks; let index = index;">
+          <li [ngStyle]="{backgroundColor: changeBackground(index)}" [ngClass]="{ whiteText: changeAfterIndex(index) }">{{ clickElement }}</li>
+    </ul>
+</div>

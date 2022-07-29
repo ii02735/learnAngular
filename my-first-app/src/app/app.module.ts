@@ -8,6 +8,7 @@ import { InputComponent } from './input/input.component';
 import { FormsModule } from '@angular/forms';
 import { AssignementDatabindingComponent } from './assignement-databinding/assignement-databinding.component';
 import { AssignementDirectivesComponent } from './assignement-directives/assignement-directives.component';
+import { AssignementPropertyEventCustomBindingComponent } from './assignement-property-event-custom-binding/assignement-property-event-custom-binding.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AssignementDirectivesComponent } from './assignement-directives/assigne
     SecondComponentComponent,
     InputComponent,
     AssignementDatabindingComponent,
-    AssignementDirectivesComponent
+    AssignementDirectivesComponent,
+    AssignementPropertyEventCustomBindingComponent
   ],
   imports: [
     BrowserModule,

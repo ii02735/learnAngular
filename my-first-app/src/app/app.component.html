@@ -8,23 +8,42 @@
 <div class="app-input-component"></div>
 <div class="app-input-component"></div>
 
-<h4>ASSIGNMENT DATABINDING</h4>
-<ol>
-    <li>Add an input which updates a property ('username') with two-way-binding</li>
-    <li>Output the username property via String interpolation (in a paragraph below the input)</li>
-    <li>Add a button which may only be clicked if the username is NOT an empty string</li>
-    <li>Upon clicking the button, the username should be reset to an empty string</li>
-</ol>
+<div class="assignement">
+    <h4>ASSIGNMENT DATABINDING</h4>
+    <ol>
+        <li>Add an input which updates a property ('username') with two-way-binding</li>
+        <li>Output the username property via String interpolation (in a paragraph below the input)</li>
+        <li>Add a button which may only be clicked if the username is NOT an empty string</li>
+        <li>Upon clicking the button, the username should be reset to an empty string</li>
+    </ol>
+    
+    <app-assignement-databinding></app-assignement-databinding>
+</div>
 
-<app-assignement-databinding></app-assignement-databinding>
+<div class="assignement">
 
-<h4>ASSIGNMENT DIRECTIVES</h4>
-<ol>
-    <li>Add A button which says 'Display details'</li>
-    <li>Add a paragraph with any content</li>
-    <li>Toggle the displaying of that paragraph with the button created in the first step</li>
-    <li>Log all clicks in an array and output that array below the secret paragraph</li>
-    <li>Starting at the 5th log item, give all future log items a blue background (via ngStyle) and white color (ngClass)</li>
-</ol>
+    <h4>ASSIGNMENT DIRECTIVES</h4>
+    <ol>
+        <li>Add A button which says 'Display details'</li>
+        <li>Add a paragraph with any content</li>
+        <li>Toggle the displaying of that paragraph with the button created in the first step</li>
+        <li>Log all clicks in an array and output that array below the secret paragraph</li>
+        <li>Starting at the 5th log item, give all future log items a blue background (via ngStyle) and white color (ngClass)</li>
+    </ol>
 
-<app-assignement-directives></app-assignement-directives>
+    <app-assignement-directives></app-assignement-directives>
+</div>
+<div class="assignement">
+    <h4>ASSIGNMENT PROPERTY AND EVENT CUSTOM BINDING</h4>
+    <ol>
+        <li>Create 3 new components : GameControl, Odd, Even</li>
+        <li>The GameControl Component should've buttons to start and stop the game</li>
+        <li>When starting the game, an event (holding an incrementing number) should get emitted each second (ref = setInterval())</li>
+        <li>The event should be listenable from outside the component</li>
+        <li>When stopping the game, no more events should get emiited (clearInterval(ref))</li>
+        <li>A new Odd component should get created for every odd number emitted, the same should happen for the Even Component (or even numbers)</li>
+        <li>Simply output Odd - NUMBER or Even - NUMBER in the two components</li>
+        <li>Style the element (e.g. paragraph) holding your output text differently in both components</li>
+    </ol>
+    <app-assignement-property-event-custom-binding></app-assignement-property-event-custom-binding>
+</div>
